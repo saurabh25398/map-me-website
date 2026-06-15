@@ -24,12 +24,16 @@
   <!-- FIXED NAVIGATION MODULE -->
   <div class="fixed w-full z-50">
     <!-- Action Top Bar -->
-    <div class="bg-slate-900 text-white text-xs sm:text-sm py-2 px-4 flex justify-center items-center gap-3 md:gap-6">
-      <span class="font-medium hidden sm:inline">Stop losing patients to competitors with the Google Screened badge.</span>
-      <span class="font-medium sm:hidden">Get your Free Gap Analysis.</span>
-      <a href="tel:5196153959" class="bg-[#FBBC05] text-slate-900 px-3 py-1 rounded-full font-bold hover:bg-yellow-400 transition-colors flex items-center gap-2">
-        <i data-lucide="phone" class="h-3 w-3"></i> 519-615-3959
-      </a>
+    <div class="relative text-white text-xs sm:text-sm py-2 px-4 flex justify-center items-center gap-3 md:gap-6 overflow-hidden shadow-md">
+      <!-- 4-Color Google Gradient Background -->
+      <div class="absolute inset-0" style="background: linear-gradient(90deg, #4285F4 0%, #EA4335 33%, #FBBC05 66%, #34A853 100%);"></div>
+      <div class="relative z-10 flex items-center gap-3 md:gap-6 w-full max-w-7xl mx-auto justify-center" style="text-shadow: 0px 1px 2px rgba(0,0,0,0.5);">
+        <span class="font-bold hidden sm:inline tracking-wide text-white text-base">Stop losing patients to competitors with the Google Screened badge.</span>
+        <span class="font-bold sm:hidden text-white">Get your Free Gap Analysis.</span>
+        <a href="tel:5196153959" class="bg-white text-slate-900 px-4 py-1.5 rounded-full font-black hover:bg-slate-100 transition-all transform hover:scale-105 flex items-center gap-2 shadow-sm" style="text-shadow: none;">
+          <i data-lucide="phone" class="h-4 w-4 text-[#34A853] animate-pulse"></i> 519-615-3959
+        </a>
+      </div>
     </div>
 
     <nav class="bg-white/90 backdrop-blur-md border-b border-slate-200">
@@ -524,8 +528,8 @@
                 <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
                 <input type="email" name="email" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none" placeholder="jane@citydental.com">
               </div>
-              <button type="submit" class="w-full bg-[#4285F4] text-white font-bold py-3.5 rounded-xl hover:bg-[#3367D6] transition-colors shadow-md mt-4">
-                Get My Practice on the Map
+              <button type="submit" id="gap-submit-btn" class="w-full bg-[#4285F4] text-white font-black py-4 rounded-xl hover:bg-[#3367D6] transition-all transform hover:scale-[1.02] shadow-lg hover:shadow-xl mt-4 flex items-center justify-center gap-2 text-lg">
+                Request Free Gap Analysis <i data-lucide="arrow-right" class="h-5 w-5"></i>
               </button>
             </form>
           </div>
@@ -637,35 +641,51 @@
     const form = document.getElementById('gap-analysis-form');
     const modal = document.getElementById('success-modal');
     const modalContent = document.getElementById('modal-content');
+    const submitBtn = document.getElementById('gap-submit-btn');
 
     form.addEventListener('submit', function(e) {
       e.preventDefault(); 
+      
+      // Visual feedback that it's sending
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i data-lucide="loader-2" class="h-6 w-6 animate-spin"></i> Sending Request...';
+      lucide.createIcons();
+      submitBtn.disabled = true;
       
       // Gather all data from the form
       const formData = new FormData(form);
       const data = Object.fromEntries(formData);
       data.source = "Gap Analysis Form"; // Tells you where the lead came from
       
-      // Transmit data silently to your Webhook (Google Chat)
-      if(WEBHOOK_URL !== "YOUR_MAKE_COM_WEBHOOK_URL_HERE") {
-         fetch(WEBHOOK_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-         }).catch(err => console.log("Webhook error:", err));
-      }
-      
-      // Show Success Modal
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-      
-      requestAnimationFrame(() => {
-        modal.classList.remove('opacity-0');
-        modalContent.classList.remove('scale-95');
-        modalContent.classList.add('scale-100');
-      });
+      // Transmit data silently to your Webhook
+      fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+      }).then(() => {
+          // Reset button
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          lucide.createIcons();
+          
+          // Show Success Modal
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+          
+          requestAnimationFrame(() => {
+            modal.classList.remove('opacity-0');
+            modalContent.classList.remove('scale-95');
+            modalContent.classList.add('scale-100');
+          });
 
-      form.reset();
+          form.reset();
+      }).catch(err => {
+          console.log("Webhook error:", err);
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          lucide.createIcons();
+          alert("There was an issue sending your request. Please try the chat widget or call us directly.");
+      });
     });
 
     window.closeModal = function() {
@@ -679,7 +699,7 @@
       }, 300);
     }
 
-    // 3. Handle Chatbot Interactions (No drafts, straight to Google Chat)
+    // 3. Handle Chatbot Interactions
     const chatToggle = document.getElementById('chat-toggle');
     const chatClose = document.getElementById('chat-close');
     const chatWindow = document.getElementById('chat-window');
@@ -689,6 +709,7 @@
 
     let chatStep = 0; 
     let userInitialQuestion = "";
+    let userEmail = "";
 
     function toggleChat() {
       if (chatWindow.classList.contains('hidden')) {
@@ -731,7 +752,7 @@
         setTimeout(() => {
           const botResponseHTML = `
             <div class="bg-blue-100 text-blue-900 p-3 rounded-2xl rounded-tl-sm self-start max-w-[85%] shadow-sm">
-              Got it! What is the best email address to reach you at? I will send this to our specialists now.
+              Got it! What is the best email address to reach you at?
             </div>
           `;
           chatMessages.insertAdjacentHTML('beforeend', botResponseHTML);
@@ -742,25 +763,40 @@
           chatStep = 1;
         }, 1000);
       } else if (chatStep === 1) {
-        const userEmail = messageText;
+        userEmail = messageText;
         
-        // Transmit chat directly to your Webhook (Google Chat)
-        if(WEBHOOK_URL !== "YOUR_MAKE_COM_WEBHOOK_URL_HERE") {
-           fetch(WEBHOOK_URL, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                  source: "Chatbot Lead",
-                  email: userEmail,
-                  message: userInitialQuestion
-              })
-           }).catch(err => console.log("Webhook error:", err));
-        }
+        setTimeout(() => {
+          const botResponseHTML = `
+            <div class="bg-blue-100 text-blue-900 p-3 rounded-2xl rounded-tl-sm self-start max-w-[85%] shadow-sm">
+              Thanks! And what is the best phone number to call or text you at?
+            </div>
+          `;
+          chatMessages.insertAdjacentHTML('beforeend', botResponseHTML);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+          
+          chatInput.type = 'tel';
+          chatInput.placeholder = 'Enter your phone number...';
+          chatStep = 2;
+        }, 1000);
+      } else if (chatStep === 2) {
+        const userPhone = messageText;
+        
+        // Transmit chat directly to your Webhook
+        fetch(WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                source: "Chatbot Lead",
+                email: userEmail,
+                phone: userPhone,
+                message: userInitialQuestion
+            })
+        }).catch(err => console.log("Webhook error:", err));
 
         setTimeout(() => {
           const botResponseHTML = `
             <div class="bg-blue-100 text-blue-900 p-3 rounded-2xl rounded-tl-sm self-start max-w-[85%] shadow-sm">
-              Perfect! Your message was securely sent to our team. We will email you shortly!
+              Perfect! Your message was securely sent to our team. We will be in touch shortly!
             </div>
           `;
           chatMessages.insertAdjacentHTML('beforeend', botResponseHTML);
@@ -768,7 +804,7 @@
           
           chatInput.disabled = true;
           chatInput.placeholder = 'Chat ended.';
-          chatStep = 2;
+          chatStep = 3;
         }, 1000);
       }
     });
