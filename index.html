@@ -134,9 +134,9 @@
                       <span>(87)</span>
                     </div>
                     <p class="text-xs text-slate-500 mb-2 truncate">Dental Implants, Invisalign...</p>
-                    <button class="w-full bg-[#4285F4] text-white rounded py-1.5 text-xs font-semibold flex items-center justify-center gap-1">
+                    <a href="tel:5196153959" class="w-full bg-[#4285F4] text-white rounded py-1.5 text-xs font-semibold flex items-center justify-center gap-1 hover:bg-[#3367D6] transition-colors cursor-pointer">
                       <i data-lucide="phone" class="h-3 w-3"></i> Call Now
-                    </button>
+                    </a>
                   </div>
                   <!-- Ad 2 -->
                   <div class="bg-white p-3 rounded-lg border border-slate-200 shadow-sm opacity-60 grayscale-[50%] relative">
@@ -254,7 +254,10 @@
               <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Lead Dispute Filing</span></li>
               <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Monthly Performance Report</span></li>
             </ul>
-            <a href="#contact" class="block w-full py-3 px-4 bg-slate-100 text-slate-900 text-center font-bold rounded-xl hover:bg-slate-200 transition-colors">Select Starter</a>
+            <!-- Changed to trigger phone call -->
+            <a href="tel:5196153959" class="block w-full py-3 px-4 bg-slate-100 text-slate-900 text-center font-bold rounded-xl hover:bg-slate-200 transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="h-4 w-4"></i> Sign up (Call 519-615-3959)
+            </a>
           </div>
 
           <!-- Growth -->
@@ -278,7 +281,10 @@
               <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-white flex-shrink-0"></i><span class="text-white">Bi-weekly Bid Optimization</span></li>
               <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-white flex-shrink-0"></i><span class="text-white">Response Time Monitoring</span></li>
             </ul>
-            <a href="#contact" class="block w-full py-3 px-4 bg-white text-[#4285F4] text-center font-bold rounded-xl hover:bg-slate-50 transition-colors">Select Growth</a>
+            <!-- Changed to trigger phone call -->
+            <a href="tel:5196153959" class="block w-full py-3 px-4 bg-white text-[#4285F4] text-center font-bold rounded-xl hover:bg-slate-50 transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="h-4 w-4"></i> Sign up (Call 519-615-3959)
+            </a>
           </div>
 
           <!-- Elite -->
@@ -299,7 +305,10 @@
               <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Custom Performance Dashboards</span></li>
               <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">4-Hour Response SLA</span></li>
             </ul>
-            <a href="#contact" class="block w-full py-3 px-4 bg-slate-100 text-slate-900 text-center font-bold rounded-xl hover:bg-slate-200 transition-colors">Select Elite</a>
+            <!-- Changed to trigger phone call -->
+            <a href="tel:5196153959" class="block w-full py-3 px-4 bg-slate-100 text-slate-900 text-center font-bold rounded-xl hover:bg-slate-200 transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="h-4 w-4"></i> Sign up (Call 519-615-3959)
+            </a>
           </div>
         </div>
         
@@ -308,7 +317,10 @@
             <h4 class="text-xl font-bold text-slate-900 mb-1">Enterprise API Tier</h4>
             <p class="text-slate-600">For DSOs and networks with 10+ locations requiring CRM integration and automated rules. Starts at $5,000/mo.</p>
           </div>
-          <a href="#contact" class="px-6 py-3 bg-slate-800 text-white font-bold rounded-xl whitespace-nowrap hover:bg-slate-900">Contact Sales</a>
+          <!-- Changed to trigger phone call -->
+          <a href="tel:5196153959" class="px-6 py-3 bg-slate-800 text-white font-bold rounded-xl whitespace-nowrap hover:bg-slate-900 flex items-center gap-2">
+            <i data-lucide="phone" class="h-4 w-4"></i> Call Sales: 519-615-3959
+          </a>
         </div>
       </div>
     </div>
@@ -377,8 +389,8 @@
           
           <div class="bg-white rounded-3xl p-8 text-slate-900 shadow-2xl">
             <h3 class="text-2xl font-bold mb-6">Request a Gap Analysis</h3>
-            <!-- Form with a simple alert so it does something when clicked -->
-            <form onsubmit="event.preventDefault(); alert('Request sent! A Map Me representative will be in touch shortly.');" class="space-y-4">
+            <!-- Functional Form -->
+            <form id="gap-analysis-form" class="space-y-4">
               <div class="grid grid-cols-2 gap-4">
                 <div>
                   <label class="block text-sm font-medium text-slate-700 mb-1">First Name</label>
@@ -429,7 +441,7 @@
             <span class="font-bold text-xl text-white tracking-tight">Map Me</span>
           </div>
           <p class="max-w-xs mb-6">
-            We put YOUR practice on the map. Specialized Google Local Services Ads management for independent US medical providers.
+            We put healthcare practices on the map. Specialized Google Local Services Ads management for independent US medical providers.
           </p>
         </div>
         <div>
@@ -458,9 +470,170 @@
     </div>
   </footer>
 
-  <!-- This script initializes the icons used in the HTML above -->
+  <!-- SUCCESS MODAL (Hidden by default) -->
+  <div id="success-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-[100] hidden items-center justify-center transition-opacity duration-300 opacity-0">
+    <div class="bg-white rounded-3xl p-8 max-w-sm w-full mx-4 text-center shadow-2xl transform transition-transform duration-300 scale-95" id="modal-content">
+      <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="check" class="h-8 w-8 text-[#34A853]"></i>
+      </div>
+      <h3 class="text-2xl font-bold text-slate-900 mb-2">Request Received!</h3>
+      <p class="text-slate-600 mb-6">Our team is reviewing your practice details. We'll be in touch shortly to perform your free Gap Analysis.</p>
+      <button onclick="closeModal()" class="w-full bg-[#4285F4] text-white font-bold py-3 rounded-xl hover:bg-[#3367D6] transition-colors">Return to Site</button>
+    </div>
+  </div>
+
+  <!-- FLOATING CHATBOT WIDGET -->
+  <div id="chatbot-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <!-- Chat Window (Hidden by default) -->
+    <div id="chat-window" class="hidden w-80 mb-4 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden flex-col transition-all duration-300 origin-bottom-right transform scale-95 opacity-0">
+      <div class="bg-[#4285F4] p-4 text-white flex justify-between items-center shadow-sm">
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+          <span class="font-bold text-sm">Map Me Support</span>
+        </div>
+        <button id="chat-close" class="text-blue-100 hover:text-white transition-colors">
+          <i data-lucide="x" class="h-5 w-5"></i>
+        </button>
+      </div>
+      <div class="p-4 h-56 bg-slate-50 overflow-y-auto text-sm text-slate-600 flex flex-col gap-3" id="chat-messages">
+        <div class="bg-blue-100 text-blue-900 p-3 rounded-2xl rounded-tl-sm self-start max-w-[85%] shadow-sm">
+          Hi! 👋 Ready to put your practice on the map? Send us a quick message or question and our team will get right back to you via email.
+        </div>
+      </div>
+      <div class="p-3 border-t border-slate-200 bg-white">
+        <form id="chat-form" class="flex gap-2">
+          <input type="text" id="chat-input" placeholder="Type your question..." required class="flex-1 border border-slate-300 rounded-xl px-3 py-2 text-sm focus:outline-none focus:border-[#4285F4] focus:ring-1 focus:ring-[#4285F4]">
+          <button type="submit" class="bg-[#4285F4] text-white p-2 rounded-xl hover:bg-[#3367D6] transition-colors flex items-center justify-center">
+            <i data-lucide="send" class="h-4 w-4"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Floating Toggle Button -->
+    <button id="chat-toggle" class="bg-[#4285F4] text-white p-4 rounded-full shadow-lg hover:bg-[#3367D6] transition-transform hover:scale-105 flex items-center justify-center relative">
+      <!-- Notification dot -->
+      <span class="absolute top-0 right-0 flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-[#EA4335]"></span>
+      </span>
+      <i data-lucide="message-square" class="h-6 w-6"></i>
+    </button>
+  </div>
+
+  <!-- INTERACTIVE SCRIPTS -->
   <script>
+    // 1. Initialize Icons
     lucide.createIcons();
+
+    // 2. Handle Contact Form Submission (Modal pop-up instead of alert)
+    const form = document.getElementById('gap-analysis-form');
+    const modal = document.getElementById('success-modal');
+    const modalContent = document.getElementById('modal-content');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop page reload
+      
+      // Show Modal
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      
+      // Trigger animation frame for smooth fade-in
+      requestAnimationFrame(() => {
+        modal.classList.remove('opacity-0');
+        modalContent.classList.remove('scale-95');
+        modalContent.classList.add('scale-100');
+      });
+
+      // Clear the form fields
+      form.reset();
+    });
+
+    // Close Modal Function
+    window.closeModal = function() {
+      modal.classList.add('opacity-0');
+      modalContent.classList.remove('scale-100');
+      modalContent.classList.add('scale-95');
+      
+      // Wait for animation to finish before hiding completely
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }, 300);
+    }
+
+    // 3. Handle Chatbot Interactions
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatClose = document.getElementById('chat-close');
+    const chatWindow = document.getElementById('chat-window');
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatMessages = document.getElementById('chat-messages');
+
+    // Toggle open/close chat
+    function toggleChat() {
+      if (chatWindow.classList.contains('hidden')) {
+        chatWindow.classList.remove('hidden');
+        chatWindow.classList.add('flex');
+        
+        requestAnimationFrame(() => {
+          chatWindow.classList.remove('scale-95', 'opacity-0');
+          chatWindow.classList.add('scale-100', 'opacity-100');
+        });
+      } else {
+        chatWindow.classList.remove('scale-100', 'opacity-100');
+        chatWindow.classList.add('scale-95', 'opacity-0');
+        
+        setTimeout(() => {
+          chatWindow.classList.add('hidden');
+          chatWindow.classList.remove('flex');
+        }, 300);
+      }
+    }
+
+    chatToggle.addEventListener('click', toggleChat);
+    chatClose.addEventListener('click', toggleChat);
+
+    // Handle sending a message in the chat
+    chatForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const messageText = chatInput.value.trim();
+      if (!messageText) return;
+
+      // 1. Visually add the user's message to the chat window
+      const userMessageHTML = `
+        <div class="bg-slate-200 text-slate-800 p-3 rounded-2xl rounded-tr-sm self-end max-w-[85%] shadow-sm ml-auto">
+          ${messageText}
+        </div>
+      `;
+      chatMessages.insertAdjacentHTML('beforeend', userMessageHTML);
+      
+      // Clear input
+      chatInput.value = '';
+      
+      // Scroll to bottom
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      // 2. Open an email draft automatically addressed to customer service
+      // using mailto link so it seamlessly hooks into their default email app
+      const supportEmail = "support@mapme.com";
+      const emailSubject = "Chatbot Inquiry from Map Me Website";
+      const emailBody = `A visitor sent the following message via the website chatbot:%0D%0A%0D%0A"${messageText}"%0D%0A%0D%0APlease reply to this email to continue the conversation.`;
+      
+      window.location.href = `mailto:${supportEmail}?subject=${emailSubject}&body=${emailBody}`;
+
+      // 3. Add an automated "follow up" response in the chat visual 1 second later
+      setTimeout(() => {
+        const botResponseHTML = `
+          <div class="bg-blue-100 text-blue-900 p-3 rounded-2xl rounded-tl-sm self-start max-w-[85%] shadow-sm">
+            Thanks! We've forwarded your message to our team. An email draft just opened so you can easily send it to us and continue the conversation!
+          </div>
+        `;
+        chatMessages.insertAdjacentHTML('beforeend', botResponseHTML);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }, 1000);
+    });
   </script>
 </body>
 </html>
