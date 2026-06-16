@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Me | Healthcare LSA Management</title>
+    <title>Map Me | Healthcare LSA & GBP Management</title>
     <!-- Loads the styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Loads the icons -->
@@ -19,44 +19,37 @@
       }
     </style>
 </head>
-<body class="min-h-screen bg-white font-sans text-slate-900 antialiased overflow-x-hidden selection:bg-blue-100 selection:text-blue-900">
+<body class="min-h-screen bg-[#F8F9FA] font-sans text-slate-900 antialiased overflow-x-hidden selection:bg-blue-100 selection:text-blue-900">
 
   <!-- FIXED NAVIGATION MODULE -->
   <div class="fixed w-full z-50">
     <!-- Action Top Bar -->
-    <div class="bg-slate-900 text-white text-xs sm:text-sm py-2 px-4 flex justify-center items-center gap-3 md:gap-6">
-      <span class="font-medium hidden lg:inline">We get your healthcare practice through Google's verification and to the top of search — flat fee, no percentage of ad spend, pay only for real patient calls.</span>
-      <span class="font-medium lg:hidden">Top of Google. Flat fee. No % of ad spend.</span>
-      <!-- TODO: replace with real US number -->
-      <a href="tel:+15550100000" class="bg-[#FBBC05] text-slate-900 px-3 py-1 rounded-full font-bold hover:bg-yellow-400 transition-colors flex items-center gap-2 flex-shrink-0">
-        <i data-lucide="phone" class="h-3 w-3"></i> (555) 010-XXXX
+    <div class="bg-white border-b border-slate-200 text-slate-700 text-xs sm:text-sm py-2 px-4 flex justify-center items-center gap-3 md:gap-6 shadow-sm">
+      <span class="font-medium hidden sm:inline">Stop losing patients to competitors with the Google Screened badge.</span>
+      <span class="font-medium sm:hidden">Get your Free Gap Analysis.</span>
+      <a href="tel:5196153959" class="bg-[#4285F4] text-white px-4 py-1 rounded-full font-bold hover:bg-[#3367D6] transition-colors flex items-center gap-2">
+        <i data-lucide="phone" class="h-3 w-3"></i> 519-615-3959
       </a>
     </div>
 
-    <nav class="bg-white/90 backdrop-blur-md border-b border-slate-200">
-      <!-- Google Brand Stripe -->
-      <div class="flex h-1.5 w-full">
-        <div class="flex-1 bg-[#4285F4]"></div>
-        <div class="flex-1 bg-[#EA4335]"></div>
-        <div class="flex-1 bg-[#FBBC05]"></div>
-        <div class="flex-1 bg-[#34A853]"></div>
-      </div>
+    <nav class="bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
+        <div class="flex justify-between items-center h-16">
           <div class="flex items-center gap-2">
-            <div class="bg-[#4285F4] p-2 rounded-lg">
-              <i data-lucide="map-pin" class="h-6 w-6 text-white"></i>
+            <div class="text-[#4285F4]">
+              <i data-lucide="map-pin" class="h-7 w-7"></i>
             </div>
-            <span class="font-bold text-2xl text-slate-900 tracking-tight">Map Me</span>
+            <span class="font-bold text-2xl text-slate-800 tracking-tight">Map Me</span>
           </div>
           <div class="hidden md:flex space-x-8">
             <a href="#how-it-works" class="text-slate-600 hover:text-[#4285F4] font-medium transition-colors">How LSA Works</a>
-            <a href="#the-moat" class="text-slate-600 hover:text-[#4285F4] font-medium transition-colors">Why Us</a>
+            <a href="#gbp-management" class="text-slate-600 hover:text-[#34A853] font-medium transition-colors">GBP Management</a>
+            <a href="#the-moat" class="text-slate-600 hover:text-[#EA4335] font-medium transition-colors">Why Us</a>
             <a href="#pricing" class="text-slate-600 hover:text-[#4285F4] font-medium transition-colors">Pricing</a>
           </div>
           <div>
-            <a href="#contact" class="bg-[#4285F4] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#3367D6] transition-colors shadow-sm">
-              Get My Free LSA Audit
+            <a href="#contact" class="text-[#4285F4] border border-[#4285F4] px-5 py-2 rounded-md font-semibold hover:bg-[#4285F4]/5 transition-colors">
+              Get on the Map
             </a>
           </div>
         </div>
@@ -66,66 +59,36 @@
 
   <main>
     <!-- HERO SECTION -->
-    <div class="relative bg-slate-50 pt-40 pb-16 lg:pt-48 lg:pb-20 overflow-hidden">
+    <div class="relative bg-white pt-40 pb-20 lg:pt-48 lg:pb-28 overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center max-w-4xl mx-auto">
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-[#4285F4] font-semibold text-sm mb-6 border border-slate-200 shadow-sm">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-[#4285F4] font-semibold text-sm mb-6 border border-blue-100">
             <i data-lucide="shield-check" class="h-4 w-4"></i>
-            Verified Google Top Placement
+            Verified Google LSA & GBP Management
           </div>
-          <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-8 leading-tight">
-            More booked patients from the <span class="text-[#4285F4]">top of Google.</span>
+          <h1 class="text-5xl md:text-6xl font-extrabold text-slate-800 tracking-tight mb-8 leading-tight">
+            We put healthcare practices <span class="text-[#4285F4]">on the map.</span>
           </h1>
           <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
-            The only US agency that does one thing — Google Local Services Ads for healthcare. We get your practice through Google's verification (most stall for months), then you only pay when a patient actually calls. Flat fee. Never a percentage of ad spend.
+            The only agency in the US that <strong>only</strong> manages Google Local Services Ads and Google Business Profiles for healthcare. No home services. No percentage of ad spend. Just verifiable patient leads.
           </p>
-          <div class="flex flex-col items-center justify-center">
-            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
-              <a href="#contact" class="bg-[#4285F4] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#3367D6] transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
-                Get My Free LSA Audit <i data-lucide="arrow-right" class="h-5 w-5"></i>
-              </a>
-              <!-- TODO: replace with real US number -->
-              <a href="tel:+15550100000" class="bg-white text-slate-700 border border-slate-300 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
-                <i data-lucide="phone" class="h-5 w-5 text-[#34A853]"></i> (555) 010-XXXX
-              </a>
-            </div>
-            <p class="text-sm text-slate-500 mt-4 font-medium"><i data-lucide="unlock" class="inline h-4 w-4 mb-0.5 text-slate-400"></i> No long-term contract — cancel anytime.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#contact" class="bg-[#4285F4] text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-[#3367D6] transition-all shadow-md flex items-center justify-center gap-2">
+              Get Your Free Gap Analysis <i data-lucide="arrow-right" class="h-5 w-5"></i>
+            </a>
+            <a href="#how-it-works" class="bg-white text-[#4285F4] border border-slate-300 px-8 py-4 rounded-md font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center">
+              How It Works
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- FOUNDER & TRUST BLOCK -->
-    <div class="bg-white border-y border-slate-100 py-12">
+    <!-- TRUST MARQUEE -->
+    <div class="bg-white border-y border-slate-200 py-6">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 max-w-4xl mx-auto">
-          <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
-            <img src="IMG_1952.jpg" alt="Founder" class="w-full h-full object-cover rounded-full shadow-lg border-4 border-slate-50">
-          </div>
-          <div>
-            <blockquote class="text-xl md:text-2xl font-medium text-slate-800 mb-4 leading-relaxed">
-              "Why I built Map Me: I only do one thing — get healthcare practices to the top of Google. No home services, no fluff."
-            </blockquote>
-            <div class="font-bold text-slate-900 text-lg">Saurabh Sharma</div>
-            <div class="text-[#4285F4] font-semibold text-sm mb-6 uppercase tracking-wider">Founder, Map Me</div>
-            
-            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm text-slate-600 bg-slate-50 p-4 rounded-lg border border-slate-200">
-              <div class="flex items-center gap-2 font-semibold text-slate-700 bg-white px-3 py-1.5 rounded border border-slate-200 shadow-sm">
-                <i data-lucide="shield" class="h-4 w-4 text-[#34A853]"></i>
-                Google Partner
-              </div>
-              <p class="leading-tight"><strong>HIPAA-aware process.</strong> We never handle patient health information through this site.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- TRUST MARQUEE (Social Proof Signal) -->
-    <div class="bg-slate-50 border-b border-slate-200 py-6">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="text-center text-sm font-semibold text-slate-400 mb-4 uppercase tracking-wider">Built Exclusively For Independent Practices Across Specialities</p>
-        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale">
+        <p class="text-center text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wider">Trusted by Independent Practices Across Specialities</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70 grayscale">
           <div class="flex items-center gap-2 font-bold text-slate-800 text-lg"><i data-lucide="activity" class="h-6 w-6"></i> Dentists</div>
           <div class="flex items-center gap-2 font-bold text-slate-800 text-lg"><i data-lucide="person-standing" class="h-6 w-6"></i> Chiropractors</div>
           <div class="flex items-center gap-2 font-bold text-slate-800 text-lg"><i data-lucide="bone" class="h-6 w-6"></i> Physical Therapists</div>
@@ -135,82 +98,82 @@
       </div>
     </div>
 
-    <!-- HOW IT WORKS SECTION -->
-    <div id="how-it-works" class="py-20 bg-white">
+    <!-- HOW LSA WORKS SECTION -->
+    <div id="how-it-works" class="py-20 bg-[#F8F9FA]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 class="text-3xl font-bold text-slate-900 mb-6">Above Ads. Above Maps. Above Organic.</h2>
-            <p class="text-lg text-slate-600 mb-6">
+            <h2 class="text-3xl font-bold text-slate-800 mb-6">Above Ads. Above Maps. Above Organic.</h2>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
               When a patient searches for your specialty, Google Local Services Ads (LSA) appear at the absolute top of the page. It is the most commercially significant placement on the internet.
             </p>
             <ul class="space-y-4 mb-8">
-              <li class="flex gap-3 items-start">
+              <li class="flex gap-3 items-start bg-white p-4 rounded-md border border-slate-200 shadow-sm">
                 <i data-lucide="check-circle-2" class="h-6 w-6 text-[#34A853] flex-shrink-0 mt-0.5"></i>
                 <span class="text-slate-700"><strong>Pay Per Lead, Not Per Click:</strong> You only pay when a patient actually calls or messages your practice directly. No wasted budget on accidental clicks.</span>
               </li>
-              <li class="flex gap-3 items-start">
+              <li class="flex gap-3 items-start bg-white p-4 rounded-md border border-slate-200 shadow-sm">
                 <i data-lucide="check-circle-2" class="h-6 w-6 text-[#34A853] flex-shrink-0 mt-0.5"></i>
                 <span class="text-slate-700"><strong>Google Verified Trust:</strong> Stand out instantly. Google verifies your NPI, insurance, and licenses, signaling ultimate trust to patients.</span>
               </li>
-              <li class="flex gap-3 items-start">
+              <li class="flex gap-3 items-start bg-white p-4 rounded-md border border-slate-200 shadow-sm">
                 <i data-lucide="check-circle-2" class="h-6 w-6 text-[#34A853] flex-shrink-0 mt-0.5"></i>
                 <span class="text-slate-700"><strong>Direct Call Integration:</strong> The primary action is a phone call directly to your front desk, maximizing conversion rates.</span>
               </li>
             </ul>
           </div>
           
-          <!-- Mock Google Search Results (De-risked and labeled) -->
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 mt-10 lg:mt-0">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-slate-200">
-              <!-- Search Bar Mockup -->
-              <div class="border-b border-slate-100 p-4 flex items-center gap-3">
-                <i data-lucide="search" class="h-5 w-5 text-[#4285F4]"></i>
-                <div class="bg-slate-100 h-8 w-full rounded-full flex items-center px-4">
+          <div class="bg-white p-6 rounded-md shadow-md border border-slate-200 mt-10 lg:mt-0">
+            <div class="border border-slate-200 rounded-md overflow-hidden">
+              <div class="border-b border-slate-100 p-4 flex items-center gap-3 bg-[#F8F9FA]">
+                <i data-lucide="search" class="h-5 w-5 text-slate-400"></i>
+                <div class="bg-white border border-slate-300 h-8 w-full rounded-full flex items-center px-4 shadow-inner">
                   <span class="text-slate-600 text-sm">dentist near me</span>
                 </div>
               </div>
               
-              <!-- LSA Mockup Section -->
-              <div class="p-4 border-b border-slate-200 bg-white relative">
-                <!-- Compliance Label -->
-                <div class="bg-slate-100 text-slate-500 text-[10px] font-bold px-2 py-1 mb-3 rounded border border-slate-200 inline-block uppercase tracking-wider">
-                  Illustrative example — not an actual client result
-                </div>
-                
+              <div class="p-4 border-b border-slate-200 bg-white">
                 <div class="flex items-center gap-2 mb-3">
                   <i data-lucide="shield-check" class="h-4 w-4 text-[#34A853]"></i>
                   <span class="text-xs font-bold text-slate-700 uppercase tracking-wider">Google Verified</span>
                 </div>
-                
                 <div class="grid grid-cols-2 gap-3">
-                  <!-- Ad 1 -->
-                  <div class="bg-white p-3 rounded-lg border-2 border-[#4285F4] shadow-sm relative z-10">
+                  <div class="bg-white p-3 rounded-md border-2 border-[#4285F4] shadow-md relative transform scale-105 z-10">
                     <div class="absolute -top-2 -right-2 bg-[#EA4335] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-sm animate-pulse">YOUR PRACTICE</div>
-                    <div class="h-20 bg-slate-200 rounded-md mb-2 bg-[url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=300&q=80')] bg-cover bg-center"></div>
-                    <h4 class="font-bold text-slate-900 text-sm truncate mb-1">City Dental Care</h4>
-                    <p class="text-xs text-slate-500 mb-2 truncate">Dental Implants, Invisalign...</p>
-                    <div class="w-full bg-[#4285F4] text-white rounded py-1.5 text-xs font-semibold flex items-center justify-center gap-1">
-                      <i data-lucide="phone" class="h-3 w-3"></i> Call Now
+                    <div class="h-20 bg-slate-200 rounded mb-2 bg-[url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=300&q=80')] bg-cover bg-center"></div>
+                    <h4 class="font-bold text-slate-900 text-sm truncate">City Dental Care</h4>
+                    <div class="flex items-center gap-1 text-xs text-slate-600 mb-2">
+                      <span class="font-bold">4.9</span>
+                      <div class="flex text-[#FBBC05]">
+                        <i data-lucide="star" class="h-3 w-3 fill-current"></i><i data-lucide="star" class="h-3 w-3 fill-current"></i><i data-lucide="star" class="h-3 w-3 fill-current"></i><i data-lucide="star" class="h-3 w-3 fill-current"></i><i data-lucide="star" class="h-3 w-3 fill-current"></i>
+                      </div>
+                      <span>(87)</span>
                     </div>
+                    <a href="tel:5196153959" class="w-full bg-[#4285F4] text-white rounded py-1.5 text-xs font-semibold flex items-center justify-center gap-1 hover:bg-[#3367D6] transition-colors cursor-pointer">
+                      <i data-lucide="phone" class="h-3 w-3"></i> Call Now
+                    </a>
                   </div>
-                  <!-- Ad 2 -->
-                  <div class="bg-white p-3 rounded-lg border border-slate-200 shadow-sm opacity-60 grayscale-[30%]">
-                    <div class="h-20 bg-slate-200 rounded-md mb-2"></div>
-                    <h4 class="font-bold text-slate-900 text-sm truncate mb-1">Family Dentistry</h4>
-                    <p class="text-xs text-slate-500 mb-2 truncate">Teeth Cleaning, Exams...</p>
-                    <div class="w-full bg-slate-100 text-slate-400 rounded py-1.5 text-xs font-semibold flex items-center justify-center gap-1">
-                      <i data-lucide="phone" class="h-3 w-3"></i> Call Now
+                  <div class="bg-white p-3 rounded-md border border-slate-200 shadow-sm opacity-60 grayscale-[30%]">
+                    <div class="h-20 bg-slate-200 rounded mb-2"></div>
+                    <h4 class="font-bold text-slate-900 text-sm truncate">Family Dentistry</h4>
+                    <div class="flex items-center gap-1 text-xs text-slate-600 mb-2">
+                      <span class="font-bold">4.6</span>
+                      <div class="flex text-[#FBBC05]">
+                        <i data-lucide="star" class="h-3 w-3 fill-current"></i><i data-lucide="star" class="h-3 w-3 fill-current"></i><i data-lucide="star" class="h-3 w-3 fill-current"></i><i data-lucide="star" class="h-3 w-3 fill-current"></i><i data-lucide="star" class="h-3 w-3 fill-current"></i>
+                      </div>
+                      <span>(22)</span>
                     </div>
+                    <button class="w-full bg-slate-100 text-slate-400 rounded py-1.5 text-xs font-semibold flex items-center justify-center gap-1">
+                      <i data-lucide="phone" class="h-3 w-3"></i> Call Now
+                    </button>
                   </div>
                 </div>
               </div>
               
-              <!-- Fake Standard Ads -->
-              <div class="p-4 border-b border-slate-100 opacity-60">
+              <div class="p-4 border-b border-slate-100 opacity-60 bg-white">
                 <div class="text-[10px] font-bold text-slate-800 mb-1">Sponsored</div>
                 <h3 class="text-blue-800 font-medium text-sm leading-tight mb-1 underline">Standard PPC Ad That Costs Per Click</h3>
-                <p class="text-xs text-slate-500">People scroll right past this to look at the verified providers above...</p>
+                <p class="text-xs text-slate-500">People scroll right past this to look at the verified LSA providers above...</p>
               </div>
             </div>
           </div>
@@ -218,74 +181,84 @@
       </div>
     </div>
 
-    <!-- 3-STEP ONBOARDING PROCESS -->
-    <div class="py-20 bg-slate-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-slate-900 mb-4">Launch in 3 Simple Steps</h2>
-        <p class="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">We handle the grueling 3-6 week verification process with Google so you don't have to lift a finger.</p>
-        
-        <div class="grid md:grid-cols-3 gap-8 relative">
-          <!-- Connecting Line -->
-          <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-slate-200 -z-10 transform -translate-y-12"></div>
-          
-          <!-- Step 1 -->
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-0">
-            <div class="w-12 h-12 bg-[#4285F4] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">1</div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Gap Analysis</h3>
-            <p class="text-slate-600 text-sm">We analyze your local market, identify where you are losing patients, and project your specific Cost-Per-Lead.</p>
+    <!-- NEW GBP MANAGEMENT SECTION -->
+    <div id="gbp-management" class="py-20 bg-white border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center justify-center p-3 bg-green-50 rounded-full mb-4">
+            <i data-lucide="store" class="h-8 w-8 text-[#34A853]"></i>
           </div>
-          <!-- Step 2 -->
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-0">
-            <div class="w-12 h-12 bg-[#FBBC05] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">2</div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Healthcare Verification</h3>
-            <p class="text-slate-600 text-sm">We navigate your NPI, malpractice insurance, DUNS, and clinical licenses directly with Google's verification team.</p>
+          <h2 class="text-3xl font-bold text-slate-800 mb-4">Dominate Local Search with GBP</h2>
+          <p class="text-lg text-slate-600">
+            A verified Google Business Profile (GBP) is now <strong>mandatory</strong> to run Local Services Ads. Fully optimized profiles get <strong>7x more clicks</strong> and <strong>5x more views</strong>. We treat your GBP as a primary conversion engine.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-[#F8F9FA] p-6 rounded-md border border-slate-200 hover:shadow-md transition-shadow">
+            <i data-lucide="star" class="h-6 w-6 text-[#FBBC05] mb-4"></i>
+            <h3 class="font-bold text-slate-800 mb-2">Review Management</h3>
+            <p class="text-sm text-slate-600">91% of patients use reviews to evaluate practices. We actively monitor, respond to, and generate new reviews to boost your LSA ranking and build patient trust.</p>
           </div>
-          <!-- Step 3 -->
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative z-0">
-            <div class="w-12 h-12 bg-[#34A853] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">3</div>
-            <h3 class="text-xl font-bold text-slate-900 mb-2">Dominate Search</h3>
-            <p class="text-slate-600 text-sm">Your practice goes live at the absolute top of Google. You only pay when a patient actually calls your front desk.</p>
+          <!-- Card 2 -->
+          <div class="bg-[#F8F9FA] p-6 rounded-md border border-slate-200 hover:shadow-md transition-shadow">
+            <i data-lucide="image" class="h-6 w-6 text-[#4285F4] mb-4"></i>
+            <h3 class="font-bold text-slate-800 mb-2">Dynamic Posts & Photos</h3>
+            <p class="text-sm text-slate-600">Practices with photos receive 42% more direction requests. We manage your Google Posts, events, and image galleries to keep your profile active and engaging.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-[#F8F9FA] p-6 rounded-md border border-slate-200 hover:shadow-md transition-shadow">
+            <i data-lucide="map" class="h-6 w-6 text-[#EA4335] mb-4"></i>
+            <h3 class="font-bold text-slate-800 mb-2">Service Area & Attributes</h3>
+            <p class="text-sm text-slate-600">We meticulously categorize your medical services, update holiday hours, and configure specific attributes (e.g., wheelchair accessible, insurance accepted).</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-[#F8F9FA] p-6 rounded-md border border-slate-200 hover:shadow-md transition-shadow">
+            <i data-lucide="message-circle" class="h-6 w-6 text-[#34A853] mb-4"></i>
+            <h3 class="font-bold text-slate-800 mb-2">Chat & Booking Integrations</h3>
+            <p class="text-sm text-slate-600">77% of consumers expect online booking. We ensure your direct booking links and SMS/WhatsApp chat features are properly integrated into search results.</p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- DIFFERENTIATORS SECTION -->
-    <div id="the-moat" class="py-20 bg-white">
+    <div id="the-moat" class="py-20 bg-[#F8F9FA]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
-          <h2 class="text-3xl font-bold text-slate-900 mb-4">Why Depth Beats Breadth</h2>
+          <h2 class="text-3xl font-bold text-slate-800 mb-4">Why Depth Beats Breadth</h2>
           <p class="text-lg text-slate-600">
-            Generalist agencies treat LSA as a checkbox. We built our entire operation around the specific compliance and verification requirements of US Healthcare.
+            Generalist agencies treat Google Ads as a checkbox. We built our entire operation around the specific compliance and verification requirements of US Healthcare.
           </p>
         </div>
         
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-            <div class="bg-white w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-sm border border-slate-100">
-              <i data-lucide="stethoscope" class="h-7 w-7 text-[#4285F4]"></i>
+          <div class="bg-white p-8 rounded-md shadow-sm border border-slate-200 border-t-4 border-t-[#4285F4]">
+            <div class="bg-slate-50 w-12 h-12 rounded flex items-center justify-center mb-6">
+              <i data-lucide="stethoscope" class="h-6 w-6 text-[#4285F4]"></i>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">100% Healthcare Focus</h3>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">100% Healthcare Focus</h3>
             <p class="text-slate-600 leading-relaxed text-sm">
-              We don't do home services. We don't do law firms. We speak the language of NPIs and HIPAA. We've mapped all 200+ healthcare job types to ensure your profile captures every relevant patient search.
+              We don't do home services or law firms. We speak the language of NPIs, patient intake, and HIPAA compliance. We've mapped all 200+ healthcare job types to ensure your profile captures every relevant patient search.
             </p>
           </div>
           
-          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-            <div class="bg-white w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-sm border border-slate-100">
-              <i data-lucide="shield-check" class="h-7 w-7 text-[#EA4335]"></i>
+          <div class="bg-white p-8 rounded-md shadow-sm border border-slate-200 border-t-4 border-t-[#EA4335]">
+            <div class="bg-slate-50 w-12 h-12 rounded flex items-center justify-center mb-6">
+              <i data-lucide="shield-check" class="h-6 w-6 text-[#EA4335]"></i>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Verification is the Product</h3>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">Verification is the Product</h3>
             <p class="text-slate-600 leading-relaxed text-sm">
               Healthcare verification is complex. We navigate NPI registration, malpractice insurance review, DUNS verification, and clinical staff background checks. We clear accounts in weeks, while others take months.
             </p>
           </div>
           
-          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-            <div class="bg-white w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-sm border border-slate-100">
-              <i data-lucide="trending-up" class="h-7 w-7 text-[#34A853]"></i>
+          <div class="bg-white p-8 rounded-md shadow-sm border border-slate-200 border-t-4 border-t-[#34A853]">
+            <div class="bg-slate-50 w-12 h-12 rounded flex items-center justify-center mb-6">
+              <i data-lucide="trending-up" class="h-6 w-6 text-[#34A853]"></i>
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-3">Zero % of Spend Pricing</h3>
+            <h3 class="text-xl font-bold text-slate-800 mb-3">Zero % of Spend Pricing</h3>
             <p class="text-slate-600 leading-relaxed text-sm">
               LSA isn't a traditional media buy. Charging a percentage of ad spend creates a perverse incentive for an agency to let your costs rise. We charge a flat fee for expertise, so our only goal is maximizing your ROI.
             </p>
@@ -294,122 +267,179 @@
       </div>
     </div>
 
-    <!-- TESTIMONIAL SLOT: Remove 'hidden' class once populated -->
-    <div id="testimonial-slot" class="hidden py-16 bg-blue-50 border-y border-blue-100">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <i data-lucide="quote" class="h-10 w-10 text-[#4285F4] opacity-20 mx-auto mb-6"></i>
-        <p class="text-2xl font-medium text-slate-800 italic mb-8">"We struggled with Google's verification for months. Map Me cleared it in weeks. We've seen <span class="font-bold text-[#4285F4]">47 new-patient calls in 90 days</span> directly from the top placement."</p>
-        <div class="flex items-center justify-center gap-4">
-          <div class="h-12 w-12 bg-slate-200 rounded-full"></div>
-          <div class="text-left">
-            <div class="font-bold text-slate-900">Dr. [First Name Last Name]</div>
-            <div class="text-sm text-slate-500">[Specialty], [City]</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- PRICING SECTION -->
-    <div id="pricing" class="py-20 bg-white">
+    <div id="pricing" class="py-20 bg-white border-y border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <h2 class="text-3xl font-bold text-slate-900 mb-4">Transparent, Flat-Rate Pricing</h2>
-          <p class="text-lg text-slate-600 mb-4">
-            The setup fee covers the intensive 3-6 week healthcare verification process. The retainer covers ongoing optimization, dispute filing, and profile management.
-          </p>
-          <div class="inline-block bg-blue-50 text-blue-700 font-bold px-4 py-2 rounded-full border border-blue-100 shadow-sm text-sm">
-            <i data-lucide="award" class="inline h-4 w-4 mb-0.5 mr-1"></i> Founding-client pricing available for our first practices.
+        <!-- Competitive Comparison Box -->
+        <div class="bg-white rounded-md border border-slate-200 shadow-sm overflow-hidden mb-20">
+          <div class="px-8 py-6 text-center bg-[#F8F9FA] border-b border-slate-200">
+            <h2 class="text-2xl font-bold text-slate-800">How Map Me Compares to the Market</h2>
+          </div>
+          <div class="p-8 overflow-x-auto">
+            <table class="w-full text-left border-collapse min-w-[600px]">
+              <thead>
+                <tr class="border-b-2 border-slate-100">
+                  <th class="py-4 px-4 font-bold text-slate-500 w-1/4">Agency Type</th>
+                  <th class="py-4 px-4 font-bold text-slate-500 w-1/4">Their Pricing Model</th>
+                  <th class="py-4 px-4 font-bold text-slate-500 w-1/4">Their Focus</th>
+                  <th class="py-4 px-4 font-bold text-slate-500 w-1/4">The Problem</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm">
+                <tr class="border-b border-slate-50">
+                  <td class="py-4 px-4 font-semibold text-slate-800">Big Ad Agencies (e.g. WebFX)</td>
+                  <td class="py-4 px-4">12% - 20% of Ad Spend</td>
+                  <td class="py-4 px-4">Everything (E-commerce to B2B)</td>
+                  <td class="py-4 px-4 text-red-500">They make more money when your lead costs go up.</td>
+                </tr>
+                <tr class="border-b border-slate-50">
+                  <td class="py-4 px-4 font-semibold text-slate-800">Enterprise Platforms (e.g. Scorpion)</td>
+                  <td class="py-4 px-4">$15k - $25k/mo Retainers</td>
+                  <td class="py-4 px-4">Massive Hospital Networks</td>
+                  <td class="py-4 px-4 text-red-500">Overkill and overpriced for independent practices.</td>
+                </tr>
+                <tr class="border-b border-slate-50">
+                  <td class="py-4 px-4 font-semibold text-slate-800">LSA Generalists (e.g. SearchKings)</td>
+                  <td class="py-4 px-4">Flat Fee</td>
+                  <td class="py-4 px-4">Plumbers, Roofers, Locksmiths</td>
+                  <td class="py-4 px-4 text-red-500">No HIPAA knowledge. Stalls on NPI & medical licenses.</td>
+                </tr>
+                <tr class="bg-blue-50/50 border-l-4 border-[#4285F4]">
+                  <td class="py-5 px-4 font-bold text-[#4285F4] text-base"><i data-lucide="check-circle-2" class="inline h-5 w-5 mr-1 mb-1"></i> Map Me</td>
+                  <td class="py-5 px-4 font-bold text-slate-900">Flat Fee (Zero % of Spend)</td>
+                  <td class="py-5 px-4 font-bold text-slate-900">100% U.S. Healthcare</td>
+                  <td class="py-5 px-4 font-bold text-[#34A853]">Perfectly aligned incentives. We clear medical verifications in weeks.</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-slate-800 mb-4">Transparent, Flat-Rate Pricing</h2>
+          <p class="text-lg text-slate-600">
+            The setup fee covers the intensive 3-6 week healthcare verification process. The retainer covers ongoing optimization, dispute filing, and GBP management.
+          </p>
+        </div>
+
+        <!-- 3 Pricing Cards -->
         <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <!-- Starter -->
-          <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow">
+          <div class="bg-white rounded-md border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow">
             <div class="mb-6">
-              <h3 class="text-2xl font-bold text-slate-900 mb-2">Starter</h3>
-              <p class="text-slate-500 h-12">Best for solo practitioners & single locations new to LSA.</p>
+              <h3 class="text-2xl font-bold text-slate-800 mb-2">Starter</h3>
+              <p class="text-slate-500 h-12 text-sm">Best for solo practitioners & single locations new to LSA.</p>
             </div>
-            <div class="mb-6">
-              <span class="text-4xl font-extrabold text-slate-900">$895</span>
+            <div class="mb-6 border-b border-slate-100 pb-6">
+              <span class="text-4xl font-extrabold text-slate-800">$895</span>
               <span class="text-slate-500 font-medium">/mo</span>
               <div class="text-sm text-slate-500 mt-2 font-medium">+ $1,750 setup fee</div>
             </div>
-            <ul class="space-y-4 mb-8">
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">1 Location Included</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Full Verification Navigation</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Job Type Configuration</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Lead Dispute Filing</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Monthly Performance Report</span></li>
+            <ul class="space-y-4 mb-8 text-sm">
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">1 Location Included</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Full Verification Navigation</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Job Type Configuration</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Lead Dispute Filing</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Monthly Performance Report</span></li>
             </ul>
-            <a href="#contact" class="block w-full py-3 px-4 bg-slate-50 text-slate-900 text-center font-bold rounded-xl hover:bg-slate-100 transition-colors border border-slate-200">
-              Get My Free LSA Audit
+            <a href="tel:5196153959" class="block w-full py-3 px-4 bg-white border border-[#4285F4] text-[#4285F4] text-center font-bold rounded hover:bg-blue-50 transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="h-4 w-4"></i> Call: 519-615-3959
             </a>
-            <p class="text-center text-xs text-slate-400 mt-3">No long-term contract — cancel anytime.</p>
           </div>
 
-          <!-- Growth -->
-          <div class="bg-white rounded-3xl border-2 border-[#4285F4] p-8 shadow-xl relative transform lg:-translate-y-4 mt-8 lg:mt-0">
-            <div class="absolute top-0 right-6 transform -translate-y-1/2 bg-[#4285F4] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide shadow-sm">
+          <!-- Growth (Highlighted) -->
+          <div class="bg-white rounded-md border-2 border-[#4285F4] p-8 shadow-md relative transform lg:-translate-y-4 mt-8 lg:mt-0">
+            <div class="absolute top-0 right-1/2 transform translate-x-1/2 -translate-y-1/2 bg-[#4285F4] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
               Most Popular
             </div>
             <div class="mb-6">
-              <h3 class="text-2xl font-bold text-slate-900 mb-2">Growth</h3>
-              <p class="text-slate-600 h-12">For established practices actively growing their patient base.</p>
+              <h3 class="text-2xl font-bold text-slate-800 mb-2">Growth</h3>
+              <p class="text-slate-500 h-12 text-sm">For established practices actively growing their patient base.</p>
             </div>
-            <div class="mb-6">
-              <span class="text-4xl font-extrabold text-slate-900">$1,595</span>
+            <div class="mb-6 border-b border-slate-100 pb-6">
+              <span class="text-4xl font-extrabold text-slate-800">$1,595</span>
               <span class="text-slate-500 font-medium">/mo</span>
               <div class="text-sm text-slate-500 mt-2 font-medium">+ $2,250 setup fee</div>
             </div>
-            <ul class="space-y-4 mb-8">
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800">Up to 3 Locations Included</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800"><strong>Full GBP Management Included</strong></span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800">Review Generation Protocol</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800">Bi-weekly Bid Optimization</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800">Response Time Monitoring</span></li>
+            <ul class="space-y-4 mb-8 text-sm">
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800">Up to 3 Locations Included</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800"><strong>Full GBP Management Included</strong></span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800">Review Generation Protocol</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800">Bi-weekly Bid Optimization</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-800">Response Time Monitoring</span></li>
             </ul>
-            <a href="#contact" class="block w-full py-3 px-4 bg-[#4285F4] text-white text-center font-bold rounded-xl hover:bg-[#3367D6] transition-colors shadow-md">
-              Get My Free LSA Audit
+            <a href="tel:5196153959" class="block w-full py-3 px-4 bg-[#4285F4] text-white text-center font-bold rounded hover:bg-[#3367D6] transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="h-4 w-4"></i> Call: 519-615-3959
             </a>
-            <p class="text-center text-xs text-slate-400 mt-3">No long-term contract — cancel anytime.</p>
           </div>
 
           <!-- Elite -->
-          <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow mt-8 lg:mt-0">
+          <div class="bg-white rounded-md border border-slate-200 p-8 shadow-sm hover:shadow-md transition-shadow mt-8 lg:mt-0">
             <div class="mb-6">
-              <h3 class="text-2xl font-bold text-slate-900 mb-2">Elite</h3>
-              <p class="text-slate-500 h-12">For multi-location practices and regional healthcare groups.</p>
+              <h3 class="text-2xl font-bold text-slate-800 mb-2">Elite</h3>
+              <p class="text-slate-500 h-12 text-sm">For multi-location practices and regional healthcare groups.</p>
             </div>
-            <div class="mb-6">
-              <span class="text-4xl font-extrabold text-slate-900">$2,995</span>
+            <div class="mb-6 border-b border-slate-100 pb-6">
+              <span class="text-4xl font-extrabold text-slate-800">$2,995</span>
               <span class="text-slate-500 font-medium">/mo</span>
               <div class="text-sm text-slate-500 mt-2 font-medium">+ $3,500 setup fee</div>
             </div>
-            <ul class="space-y-4 mb-8">
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Up to 10 Locations Included</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Dedicated Account Manager</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Staff Responsiveness Training</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Custom Performance Dashboards</span></li>
-              <li class="flex gap-3"><i data-lucide="check-circle-2" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">4-Hour Response SLA</span></li>
+            <ul class="space-y-4 mb-8 text-sm">
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Up to 10 Locations Included</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Dedicated Account Manager</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Staff Responsiveness Training</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">Custom Performance Dashboards</span></li>
+              <li class="flex gap-3"><i data-lucide="check" class="h-5 w-5 text-[#4285F4] flex-shrink-0"></i><span class="text-slate-700">4-Hour Response SLA</span></li>
             </ul>
-            <a href="#contact" class="block w-full py-3 px-4 bg-slate-50 text-slate-900 text-center font-bold rounded-xl hover:bg-slate-100 transition-colors border border-slate-200">
-              Get My Free LSA Audit
+            <a href="tel:5196153959" class="block w-full py-3 px-4 bg-white border border-[#4285F4] text-[#4285F4] text-center font-bold rounded hover:bg-blue-50 transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="h-4 w-4"></i> Call: 519-615-3959
             </a>
-            <p class="text-center text-xs text-slate-400 mt-3">No long-term contract — cancel anytime.</p>
           </div>
         </div>
+        
+        <!-- Standalone Packages Container -->
+        <div class="mt-12 grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          <!-- New GBP Only Add-on -->
+          <div class="bg-[#F8F9FA] rounded-md p-6 border border-slate-200 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="store" class="h-5 w-5 text-[#34A853]"></i>
+                <h4 class="text-xl font-bold text-slate-800">Standalone GBP Management</h4>
+              </div>
+              <p class="text-slate-600 text-sm mb-4">Not ready for paid ads? We will fully verify, optimize, and manage your Google Business Profile to drive organic local traffic and map rankings. <br/><br/><strong>$350/mo</strong> (+ $750 initial setup fee).</p>
+            </div>
+            <a href="tel:5196153959" class="w-full text-center px-4 py-2 bg-white border border-slate-300 text-slate-700 font-bold rounded hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="h-4 w-4"></i> Call to Start
+            </a>
+          </div>
+
+          <!-- Enterprise API -->
+          <div class="bg-[#F8F9FA] rounded-md p-6 border border-slate-200 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <i data-lucide="server" class="h-5 w-5 text-[#EA4335]"></i>
+                <h4 class="text-xl font-bold text-slate-800">Enterprise API Tier</h4>
+              </div>
+              <p class="text-slate-600 text-sm mb-4">For DSOs and healthcare networks with 10+ locations requiring CRM integration, programmatic dashboarding, and automated budget rules. <br/><br/><strong>Starts at $5,000/mo.</strong></p>
+            </div>
+            <a href="tel:5196153959" class="w-full text-center px-4 py-2 bg-white border border-slate-300 text-slate-700 font-bold rounded hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="phone" class="h-4 w-4"></i> Contact Sales
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <!-- FAQ SECTION -->
-    <div class="py-20 bg-slate-50 border-t border-slate-200">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-slate-900 mb-10 text-center">Frequently Asked Questions</h2>
+    <div class="py-20 bg-[#F8F9FA] border-t border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate-800 mb-10 text-center">Frequently Asked Questions</h2>
         <div class="space-y-4">
           
-          <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold text-lg">
+          <details class="group bg-white rounded-md shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-800 font-bold text-lg">
               <div class="flex items-center gap-3">
                 <i data-lucide="help-circle" class="h-5 w-5 text-[#4285F4]"></i>
                 Why is there a setup fee?
@@ -423,8 +453,8 @@
             </p>
           </details>
 
-          <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold text-lg">
+          <details class="group bg-white rounded-md shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-800 font-bold text-lg">
               <div class="flex items-center gap-3">
                 <i data-lucide="help-circle" class="h-5 w-5 text-[#4285F4]"></i>
                 Do you charge a percentage of my ad spend?
@@ -438,8 +468,8 @@
             </p>
           </details>
 
-          <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold text-lg">
+          <details class="group bg-white rounded-md shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-800 font-bold text-lg">
               <div class="flex items-center gap-3">
                 <i data-lucide="help-circle" class="h-5 w-5 text-[#4285F4]"></i>
                 Why do you require Google Business Profile (GBP) access?
@@ -449,12 +479,12 @@
               </span>
             </summary>
             <p class="px-6 pb-6 pt-0 text-slate-600 leading-relaxed ml-8 border-t border-slate-100 pt-4 mt-2">
-              As of recent Google updates, a verified GBP is mandatory to run LSA campaigns. Furthermore, all reviews shown in LSA ads now pull directly from your GBP. The two platforms are completely intertwined, which is why we manage your GBP alongside LSA.
+              As of recent Google updates, a verified GBP is mandatory to run LSA campaigns. Furthermore, all reviews shown in LSA ads now pull directly from your GBP. The two platforms are completely intertwined, which is why we manage your GBP alongside LSA in our Growth and Elite tiers.
             </p>
           </details>
 
-          <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
-            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-900 font-bold text-lg">
+          <details class="group bg-white rounded-md shadow-sm border border-slate-200 [&_summary::-webkit-details-marker]:hidden">
+            <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-6 text-slate-800 font-bold text-lg">
               <div class="flex items-center gap-3">
                 <i data-lucide="help-circle" class="h-5 w-5 text-[#4285F4]"></i>
                 Do you guarantee a certain number of leads?
@@ -472,61 +502,52 @@
       </div>
     </div>
 
-    <!-- CONTACT SECTION (Calendly Fallback) -->
+    <!-- CONTACT SECTION -->
     <div id="contact" class="py-20 bg-white border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 class="text-4xl font-bold mb-6 text-slate-900 leading-tight">Ready to claim your spot at the top of Google?</h2>
+            <h2 class="text-4xl font-bold mb-6 text-slate-800 leading-tight">Ready to claim your spot at the top of Google?</h2>
             <p class="text-slate-600 text-lg mb-8 leading-relaxed">
-              Let's find out if LSA is a fit for your practice. Request a free LSA Audit, and we'll show you exactly who is currently taking your LSA traffic and what your estimated cost-per-lead will be. No commitment.
+              Let's find out if LSA is a fit for your practice. Request a free Gap Analysis, and we'll show you exactly who is currently taking your LSA traffic and what your estimated cost-per-lead will be. No commitment.
             </p>
             <div class="space-y-4 text-slate-700">
               <div class="flex items-center gap-3">
-                <div class="bg-blue-50 p-2 rounded-lg text-[#4285F4]"><i data-lucide="clock" class="h-5 w-5"></i></div>
+                <div class="bg-blue-50 p-2 rounded text-[#4285F4]"><i data-lucide="clock" class="h-5 w-5"></i></div>
                 <span class="font-medium">15-minute discovery call</span>
               </div>
               <div class="flex items-center gap-3">
-                <div class="bg-blue-50 p-2 rounded-lg text-[#4285F4]"><i data-lucide="activity" class="h-5 w-5"></i></div>
+                <div class="bg-green-50 p-2 rounded text-[#34A853]"><i data-lucide="activity" class="h-5 w-5"></i></div>
                 <span class="font-medium">Live search gap analysis</span>
               </div>
               <div class="flex items-center gap-3">
-                <div class="bg-blue-50 p-2 rounded-lg text-[#4285F4]"><i data-lucide="building" class="h-5 w-5"></i></div>
+                <div class="bg-yellow-50 p-2 rounded text-[#FBBC05]"><i data-lucide="building" class="h-5 w-5"></i></div>
                 <span class="font-medium">Custom ROI projection</span>
               </div>
             </div>
-            <div class="mt-10 p-6 bg-slate-50 rounded-2xl border border-slate-200">
-              <p class="font-bold text-slate-900 mb-2">Need immediate assistance?</p>
-              <!-- TODO: replace with real US number -->
-              <a href="tel:+15550100000" class="text-2xl font-black text-[#4285F4] hover:text-[#3367D6] transition-colors flex items-center gap-3">
-                <i data-lucide="phone" class="h-6 w-6"></i> (555) 010-XXXX
-              </a>
-            </div>
           </div>
           
-          <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-xl relative">
-            <h3 class="text-2xl font-bold mb-6 text-slate-900">Request Your Free LSA Audit</h3>
-            
-            <!-- Fallback Form (Primary CTA is to schedule) -->
+          <div class="bg-white rounded-md p-8 border border-slate-200 shadow-lg">
+            <h3 class="text-2xl font-bold mb-6 text-slate-800">Request a Gap Analysis</h3>
+            <!-- Functional Form integrated with Make.com Webhook -->
             <form id="gap-analysis-form" class="space-y-4">
-              <input type="hidden" name="source" value="Map Me LSA Audit Form">
               <div class="grid grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-sm font-medium text-slate-700 mb-1">First Name</label>
-                  <input type="text" name="firstName" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50" placeholder="Dr. Jane">
+                  <label class="block text-sm font-bold text-slate-700 mb-1">First Name</label>
+                  <input type="text" name="firstName" required class="w-full border border-slate-300 rounded px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50" placeholder="Dr. Jane">
                 </div>
                 <div>
-                  <label class="block text-sm font-medium text-slate-700 mb-1">Last Name</label>
-                  <input type="text" name="lastName" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50" placeholder="Smith">
+                  <label class="block text-sm font-bold text-slate-700 mb-1">Last Name</label>
+                  <input type="text" name="lastName" required class="w-full border border-slate-300 rounded px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50" placeholder="Smith">
                 </div>
               </div>
               <div>
-                <label class="block text-sm font-medium text-slate-700 mb-1">Practice Name</label>
-                <input type="text" name="practiceName" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50" placeholder="City Dental Care">
+                <label class="block text-sm font-bold text-slate-700 mb-1">Practice Name</label>
+                <input type="text" name="practiceName" required class="w-full border border-slate-300 rounded px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50" placeholder="City Dental Care">
               </div>
               <div>
-                <label class="block text-sm font-medium text-slate-700 mb-1">Healthcare Specialty</label>
-                <select name="specialty" class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50">
+                <label class="block text-sm font-bold text-slate-700 mb-1">Healthcare Specialty</label>
+                <select name="specialty" class="w-full border border-slate-300 rounded px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50">
                   <option>Dentist / Orthodontist</option>
                   <option>Chiropractor</option>
                   <option>Physical Therapist</option>
@@ -535,13 +556,11 @@
                 </select>
               </div>
               <div>
-                <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
-                <input type="email" name="email" required class="w-full border border-slate-300 rounded-lg px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50" placeholder="jane@citydental.com">
+                <label class="block text-sm font-bold text-slate-700 mb-1">Email Address</label>
+                <input type="email" name="email" required class="w-full border border-slate-300 rounded px-4 py-2.5 focus:ring-2 focus:ring-[#4285F4] focus:border-transparent outline-none bg-slate-50" placeholder="jane@citydental.com">
               </div>
-              
-              <button type="submit" id="submit-btn" class="group w-full bg-[#4285F4] text-white font-bold py-4 rounded-xl hover:bg-[#3367D6] transition-all shadow-md mt-4 flex items-center justify-center gap-2">
-                <span>Get My Free LSA Audit</span>
-                <i data-lucide="arrow-right" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform"></i>
+              <button type="submit" id="gap-submit-btn" class="w-full bg-[#4285F4] text-white font-bold py-3.5 rounded hover:bg-[#3367D6] transition-colors mt-4 flex items-center justify-center gap-2">
+                Get My Practice on the Map <i data-lucide="arrow-right" class="h-4 w-4"></i>
               </button>
             </form>
           </div>
@@ -551,31 +570,32 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-50 border-t border-slate-200 py-12">
+  <footer class="bg-white border-t border-slate-200 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-4 gap-8 mb-8">
         <div class="col-span-2">
           <div class="flex items-center gap-2 mb-4">
-            <div class="bg-[#4285F4] p-1.5 rounded-lg text-white">
-              <i data-lucide="map-pin" class="h-5 w-5"></i>
+            <div class="text-[#4285F4]">
+              <i data-lucide="map-pin" class="h-6 w-6"></i>
             </div>
-            <span class="font-bold text-xl text-slate-900 tracking-tight">Map Me</span>
+            <span class="font-bold text-xl text-slate-800 tracking-tight">Map Me</span>
           </div>
-          <p class="max-w-xs mb-6 text-slate-600">
-            We put healthcare practices on the map. Specialized Google Local Services Ads management for independent US medical providers.
+          <p class="max-w-xs mb-6 text-slate-500 text-sm">
+            We put healthcare practices on the map. Specialized Google Local Services Ads and GBP management for independent US medical providers.
           </p>
         </div>
         <div>
-          <h4 class="text-slate-900 font-bold mb-4">Services</h4>
-          <ul class="space-y-2 text-slate-600 text-sm">
+          <h4 class="text-slate-800 font-bold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm text-slate-500">
             <li><a href="#" class="hover:text-[#4285F4] transition-colors">LSA Management</a></li>
-            <li><a href="#" class="hover:text-[#4285F4] transition-colors">GBP Optimization</a></li>
+            <li><a href="#gbp-management" class="hover:text-[#4285F4] transition-colors">GBP Optimization</a></li>
             <li><a href="#" class="hover:text-[#4285F4] transition-colors">Healthcare Verification</a></li>
+            <li><a href="#" class="hover:text-[#4285F4] transition-colors">Enterprise API Solutions</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="text-slate-900 font-bold mb-4">Company</h4>
-          <ul class="space-y-2 text-slate-600 text-sm">
+          <h4 class="text-slate-800 font-bold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-slate-500">
             <li><a href="#how-it-works" class="hover:text-[#4285F4] transition-colors">How it Works</a></li>
             <li><a href="#pricing" class="hover:text-[#4285F4] transition-colors">Pricing</a></li>
             <li><a href="#" class="hover:text-[#4285F4] transition-colors">Privacy Policy</a></li>
@@ -583,7 +603,7 @@
           </ul>
         </div>
       </div>
-      <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+      <div class="border-t border-slate-100 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400">
         <p>&copy; 2026 Map Me Agency. All rights reserved.</p>
         <p class="mt-2 md:mt-0">Confidential & Proprietary process built exclusively for healthcare.</p>
       </div>
@@ -592,14 +612,52 @@
 
   <!-- SUCCESS MODAL (Hidden by default) -->
   <div id="success-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-[100] hidden items-center justify-center transition-opacity duration-300 opacity-0">
-    <div class="bg-white rounded-3xl p-8 max-w-sm w-full mx-4 text-center shadow-2xl transform transition-transform duration-300 scale-95" id="modal-content">
-      <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
-        <i data-lucide="check" class="h-8 w-8 text-[#4285F4]"></i>
+    <div class="bg-white rounded-md p-8 max-w-sm w-full mx-4 text-center shadow-2xl transform transition-transform duration-300 scale-95" id="modal-content">
+      <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-4 border border-green-100">
+        <i data-lucide="check" class="h-8 w-8 text-[#34A853]"></i>
       </div>
-      <h3 class="text-2xl font-bold text-slate-900 mb-2">Audit Requested!</h3>
-      <p class="text-slate-600 mb-6">Our team is reviewing your practice details. We'll be in touch shortly to perform your free LSA Audit.</p>
-      <button onclick="closeModal()" class="w-full bg-slate-100 text-slate-900 font-bold py-3 rounded-xl hover:bg-slate-200 transition-colors border border-slate-200">Close</button>
+      <h3 class="text-2xl font-bold text-slate-800 mb-2">Request Received!</h3>
+      <p class="text-slate-600 mb-6 text-sm">Our team is reviewing your practice details. We'll be in touch shortly to perform your free Gap Analysis.</p>
+      <button onclick="closeModal()" class="w-full bg-[#4285F4] text-white font-bold py-3 rounded hover:bg-[#3367D6] transition-colors">Return to Site</button>
     </div>
+  </div>
+
+  <!-- FLOATING CHATBOT WIDGET -->
+  <div id="chatbot-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <!-- Chat Window (Hidden by default) -->
+    <div id="chat-window" class="hidden w-80 mb-4 bg-white rounded-md shadow-2xl border border-slate-200 overflow-hidden flex-col transition-all duration-300 origin-bottom-right transform scale-95 opacity-0">
+      <div class="bg-white border-b border-slate-200 p-4 flex justify-between items-center shadow-sm">
+        <div class="flex items-center gap-2">
+          <div class="text-[#4285F4]"><i data-lucide="message-circle" class="h-5 w-5"></i></div>
+          <span class="font-bold text-sm text-slate-800">Map Me Support</span>
+        </div>
+        <button id="chat-close" class="text-slate-400 hover:text-slate-600 transition-colors">
+          <i data-lucide="x" class="h-5 w-5"></i>
+        </button>
+      </div>
+      <div class="p-4 h-64 bg-slate-50 overflow-y-auto text-sm text-slate-600 flex flex-col gap-3" id="chat-messages">
+        <div class="bg-white border border-slate-200 text-slate-700 p-3 rounded-lg rounded-tl-sm self-start max-w-[85%] shadow-sm">
+          Hi! 👋 Ready to put your practice on the map? Send us a quick message or question and our team will get right back to you.
+        </div>
+      </div>
+      <div class="p-3 border-t border-slate-200 bg-white">
+        <form id="chat-form" class="flex gap-2">
+          <input type="text" id="chat-input" placeholder="Type your message..." required class="flex-1 border border-slate-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-[#4285F4] focus:ring-1 focus:ring-[#4285F4] bg-slate-50">
+          <button type="submit" class="bg-[#4285F4] text-white p-2 rounded hover:bg-[#3367D6] transition-colors flex items-center justify-center">
+            <i data-lucide="send" class="h-4 w-4"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Floating Toggle Button -->
+    <button id="chat-toggle" class="bg-[#4285F4] text-white p-4 rounded-full shadow-lg hover:bg-[#3367D6] transition-transform hover:scale-105 flex items-center justify-center relative">
+      <span class="absolute top-0 right-0 flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EA4335] opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-[#EA4335]"></span>
+      </span>
+      <i data-lucide="message-square" class="h-6 w-6"></i>
+    </button>
   </div>
 
   <!-- INTERACTIVE SCRIPTS -->
@@ -607,60 +665,54 @@
     // 1. Initialize Icons
     lucide.createIcons();
 
-    // 2. Handle Contact Form Submission to Make.com Webhook
+    // =========================================================================
+    // MAKE.COM WEBHOOK URL 
+    const WEBHOOK_URL = "https://hook.us2.make.com/fjlfrt70rokgf7k4nx4sgyo9qtr57fke";
+    // =========================================================================
+
+    // 2. Handle Contact Form Submission
     const form = document.getElementById('gap-analysis-form');
     const modal = document.getElementById('success-modal');
     const modalContent = document.getElementById('modal-content');
-    const submitBtn = document.getElementById('submit-btn');
+    const submitBtn = document.getElementById('gap-submit-btn');
 
     form.addEventListener('submit', function(e) {
       e.preventDefault(); 
       
-      // Save original button text and show loading state
       const originalText = submitBtn.innerHTML;
-      submitBtn.innerHTML = '<i data-lucide="loader-2" class="h-5 w-5 animate-spin"></i> <span>Sending...</span>';
+      submitBtn.innerHTML = '<i data-lucide="loader-2" class="h-5 w-5 animate-spin"></i> Sending...';
       lucide.createIcons();
       submitBtn.disabled = true;
-      submitBtn.classList.add('opacity-80', 'cursor-not-allowed');
-
-      // Package form data
+      
       const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
+      const data = Object.fromEntries(formData);
+      data.source = "Gap Analysis Form";
+      
+      fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+      }).then(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          lucide.createIcons();
+          
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+          
+          requestAnimationFrame(() => {
+            modal.classList.remove('opacity-0');
+            modalContent.classList.remove('scale-95');
+            modalContent.classList.add('scale-100');
+          });
 
-      // FIRE DATA TO MAKE.COM
-      fetch("https://hook.us2.make.com/fjlfrt70rokgf7k4nx4sgyo9qtr57fke", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      })
-      .then(response => {
-        // Restore button
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        submitBtn.classList.remove('opacity-80', 'cursor-not-allowed');
-        lucide.createIcons();
-        
-        // Show Success Modal
-        modal.classList.remove('hidden');
-        modal.classList.add('flex');
-        
-        requestAnimationFrame(() => {
-          modal.classList.remove('opacity-0');
-          modalContent.classList.remove('scale-95');
-          modalContent.classList.add('scale-100');
-        });
-
-        form.reset();
-      })
-      .catch(error => {
-        console.error("Error submitting form:", error);
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        submitBtn.classList.remove('opacity-80', 'cursor-not-allowed');
-        lucide.createIcons();
-        alert("There was an issue sending your request. Please call us directly.");
+          form.reset();
+      }).catch(err => {
+          console.log("Webhook error:", err);
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          lucide.createIcons();
+          alert("There was an issue sending your request. Please try calling us directly.");
       });
     });
 
@@ -674,6 +726,114 @@
         modal.classList.remove('flex');
       }, 300);
     }
+
+    // 3. Handle Chatbot Interactions
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatClose = document.getElementById('chat-close');
+    const chatWindow = document.getElementById('chat-window');
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatMessages = document.getElementById('chat-messages');
+
+    let chatStep = 0; 
+    let userInitialQuestion = "";
+    let userEmail = "";
+
+    function toggleChat() {
+      if (chatWindow.classList.contains('hidden')) {
+        chatWindow.classList.remove('hidden');
+        chatWindow.classList.add('flex');
+        requestAnimationFrame(() => {
+          chatWindow.classList.remove('scale-95', 'opacity-0');
+          chatWindow.classList.add('scale-100', 'opacity-100');
+        });
+      } else {
+        chatWindow.classList.remove('scale-100', 'opacity-100');
+        chatWindow.classList.add('scale-95', 'opacity-0');
+        setTimeout(() => {
+          chatWindow.classList.add('hidden');
+          chatWindow.classList.remove('flex');
+        }, 300);
+      }
+    }
+
+    chatToggle.addEventListener('click', toggleChat);
+    chatClose.addEventListener('click', toggleChat);
+
+    chatForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const messageText = chatInput.value.trim();
+      if (!messageText) return;
+
+      const userMessageHTML = `
+        <div class="bg-[#4285F4] text-white p-3 rounded-lg rounded-tr-sm self-end max-w-[85%] shadow-sm ml-auto">
+          ${messageText}
+        </div>
+      `;
+      chatMessages.insertAdjacentHTML('beforeend', userMessageHTML);
+      chatInput.value = '';
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+
+      if (chatStep === 0) {
+        userInitialQuestion = messageText;
+        setTimeout(() => {
+          const botResponseHTML = `
+            <div class="bg-white border border-slate-200 text-slate-700 p-3 rounded-lg rounded-tl-sm self-start max-w-[85%] shadow-sm">
+              Got it! What is the best email address to reach you at?
+            </div>
+          `;
+          chatMessages.insertAdjacentHTML('beforeend', botResponseHTML);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+          
+          chatInput.type = 'email';
+          chatInput.placeholder = 'Enter your email...';
+          chatStep = 1;
+        }, 1000);
+      } else if (chatStep === 1) {
+        userEmail = messageText;
+        setTimeout(() => {
+          const botResponseHTML = `
+            <div class="bg-white border border-slate-200 text-slate-700 p-3 rounded-lg rounded-tl-sm self-start max-w-[85%] shadow-sm">
+              Thanks! And what is the best phone number to call or text you at?
+            </div>
+          `;
+          chatMessages.insertAdjacentHTML('beforeend', botResponseHTML);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+          
+          chatInput.type = 'tel';
+          chatInput.placeholder = 'Enter your phone number...';
+          chatStep = 2;
+        }, 1000);
+      } else if (chatStep === 2) {
+        const userPhone = messageText;
+        
+        fetch(WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                source: "Chatbot Lead",
+                email: userEmail,
+                phone: userPhone,
+                message: userInitialQuestion
+            })
+        }).catch(err => console.log("Webhook error:", err));
+
+        setTimeout(() => {
+          const botResponseHTML = `
+            <div class="bg-white border border-slate-200 text-slate-700 p-3 rounded-lg rounded-tl-sm self-start max-w-[85%] shadow-sm">
+              Perfect! Your message was securely sent to our team. We will be in touch shortly!
+            </div>
+          `;
+          chatMessages.insertAdjacentHTML('beforeend', botResponseHTML);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+          
+          chatInput.disabled = true;
+          chatInput.placeholder = 'Chat ended.';
+          chatStep = 3;
+        }, 1000);
+      }
+    });
   </script>
 </body>
 </html>
